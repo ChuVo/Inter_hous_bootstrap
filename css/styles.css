@@ -271,7 +271,12 @@ a:hover {
   position: absolute;
   top: 10%;
   font-size: 6rem !important;
-  font-family: apple-system, sans-serif !important;
+  font-family: FuturaLightC !important;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+  outline: none;
 }
 
 .owl-next {
@@ -328,7 +333,7 @@ a:hover {
 }
 
 .text-subscription {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .book-rotate {
@@ -359,6 +364,41 @@ a:hover {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.footer {
+  background: #70a3cd;
+  padding-top: 3rem;
+}
+
+.footer__nav {
+  list-style: none;
+}
+
+.footer__nav a {
+  color: white;
+  transition: .4s;
+}
+
+.footer__nav li:hover {
+  transform: scale(1.02);
+}
+
+.crazysouslik-link {
+  font-family: FuturaLightC;
+  transition: .2s;
+}
+.crazysouslik-link:hover {
+  color: yellow !important;
+}
+
+.crazysouslik {
+  width: 3rem;
+}
+
+.crazysouslik:hover {
+  transform: translateY(-200%) scale(5);
+  transition: .5s;
 }
 
  @media (max-width: 1200px) {
