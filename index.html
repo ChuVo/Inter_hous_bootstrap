@@ -1,441 +1,582 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+<html lang="ru">
 
-    <title>Bootstrap</title>
-  </head>
-  <body>
-    <header class="header bg-light">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Издательство Международные отношения">
-      </div>
-      <div class="container container__flex ">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>        
-          <div class="collapse navbar-collapse collaps-position collaps-view" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Оплата</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Доставка</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Об издательстве</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Готовится к издательству</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Цены</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Где купить</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="nav-item__block">
-          <div class="nav-item__el dropdown">
-            <button class="btn btn_view btn__number" type="button" id="dropdownNumber" data-toggle="dropdown">
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownNumber">
-              <a href="tel:+74952800525">+7 (495) 280-05-25</a>
-              <a href="tel:+7498423325">+7 (498) 420-33-25</a>
-            </div>
-          </div>
-          <div class="nav-item__el nav-item__el_number">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>Bootstrap</title>
+</head>
+
+<body>
+  <header class="header bg-light">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Издательство Международные отношения">
+    </div>
+    <div class="container container__flex ">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse collaps-position collaps-view" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Оплата</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Об издательстве</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Готовится к издательству</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Где купить</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-item__block">
+        <div class="nav-item__el dropdown">
+          <button class="btn btn_view btn__number" type="button" id="dropdownNumber" data-toggle="dropdown">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownNumber">
             <a href="tel:+74952800525">+7 (495) 280-05-25</a>
             <a href="tel:+7498423325">+7 (498) 420-33-25</a>
           </div>
-          <div class="nav-item__el nav-item__el_user">
-            <img src="images/user.png" alt="Your account" class="user">
+        </div>
+        <div class="nav-item__el nav-item__el_number">
+          <a href="tel:+74952800525">+7 (495) 280-05-25</a>
+          <a href="tel:+7498423325">+7 (498) 420-33-25</a>
+        </div>
+        <div class="nav-item__el nav-item__el_user">
+          <img src="images/user.png" alt="Your account" class="user">
+        </div>
+        <div class="nav-item__el block__busket">
+          <img src="images/busket.png" alt="Your busket" class="busket">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="container">
+      <div class="icon-box row mb-5">
+        <a class="icon-box__link icon-box__link_catalog" href="#">
+          <div class="icon-box__icon">
+            <span class="icon-box__line"></span>
           </div>
-          <div class="nav-item__el block__busket">
-            <img src="images/busket.png" alt="Your busket" class="busket">
+          <span class="icon-box__title">Каталог</span>
+        </a>
+        <a class="icon-box__link icon-box__link_busket" href="#">
+          <div class="icon-box__icon bg-aqua"></div>
+          <span class="icon-box__title">Корзина</span>
+        </a>
+      </div>
+      <div class="col-12 row row-nowrap mb-5 pr-0">
+        <div class="col-12 col-md-2 p-0">
+          <ul class="nav nav__category">
+            <li class="pb-2">
+              <a class="category__link" href="#new" aria-controls="new" data-toggle="tab">Новинки</a>
+            </li>
+            <li class="pb-2">
+              <a class="category__link" href="#best" aria-controls="best" data-toggle="tab">Бестселлеры</a>
+            </li>
+            <li class="pb-2">
+              <a class="category__link" href="#soon" aria-controls="soon" data-toggle="tab">Скоро в продаже</a>
+            </li>
+            <li class="pb-2">
+              <a class="category__link" href="#for-kids" aria-controls="for-kids" data-toggle="tab">Для детей</a>
+            </li>
+            <li class="pb-2">
+              <a class="category__link" href="#discount" aria-controls="discount" data-toggle="tab">Скидки дня</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content col-12 px-0">
+          <div class="tab-pane active" id="new">
+            <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
+              <div class="pl-2">
+                <img src="images/book-1.png" alt="" class="books-images">
+              </div>
+              <div class="pl-2">
+                <img src="images/book-2.jpg" alt="" class="books-images">
+              </div>
+            </div>
+            <div class="col-6 col-md-4 pr-0 m-0-auto">
+              <div>
+                <img src="images/book-5.jpg" alt="" class="books-images">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 px-0">
+              <div class="col-md-12 pr-0 books-wrapper-row ">
+                <div class='col-6 px-0 pr-2'>
+                  <img src="images/book-3.jpg" alt="" class="books-images">
+                </div>
+                <div class='col-6 px-0 pl-2'>
+                  <img src="images/book-4.jpg" alt="" class="books-images">
+                </div>
+              </div>
+              <div class="col-md-12 pr-0 books__plash">
+                <div class="col-12 books__more">
+                  <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
+                  <a href="#" class="books__more-link">Смотреть все</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="best">
+            <div class="col-6 col-md-4 pr-0 m-0-auto">
+              <div>
+                <img src="images/book-5.jpg" alt="" class="books-images">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 px-0">
+              <div class="col-md-12 pr-0 books-wrapper-row ">
+                <div class='col-6 px-0 pr-2'>
+                  <img src="images/book-3.jpg" alt="" class="books-images">
+                </div>
+                <div class='col-6 px-0 pl-2'>
+                  <img src="images/book-4.jpg" alt="" class="books-images">
+                </div>
+              </div>
+              <div class="col-md-12 pr-0 books__plash">
+                <div class="col-12 books__more">
+                  <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
+                  <a href="#" class="books__more-link">Смотреть все</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
+              <div class="pl-2">
+                <img src="images/book-1.png" alt="" class="books-images">
+              </div>
+              <div class="pl-2">
+                <img src="images/book-2.jpg" alt="" class="books-images">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="soon">
+            <div class="col-12 col-md-4 px-0">
+              <div class="col-md-12 pr-0 books-wrapper-row ">
+                <div class='col-6 px-0 pr-2'>
+                  <img src="images/book-3.jpg" alt="" class="books-images">
+                </div>
+                <div class='col-6 px-0 pl-2'>
+                  <img src="images/book-4.jpg" alt="" class="books-images">
+                </div>
+              </div>
+              <div class="col-md-12 pr-0 books__plash">
+                <div class="col-12 books__more">
+                  <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
+                  <a href="#" class="books__more-link">Смотреть все</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 pr-0 m-0-auto">
+              <div>
+                <img src="images/book-5.jpg" alt="" class="books-images">
+              </div>
+            </div>
+            <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
+              <div class="pl-2">
+                <img src="images/book-1.png" alt="" class="books-images">
+              </div>
+              <div class="pl-2">
+                <img src="images/book-2.jpg" alt="" class="books-images">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="for-kids">
+            <div class="col-12 col-md-4 px-0">
+              <div class="col-md-12 pr-0 books-wrapper-row ">
+                <div class='col-6 px-0 pr-2'>
+                  <img src="images/book-3.jpg" alt="" class="books-images">
+                </div>
+                <div class='col-6 px-0 pl-2'>
+                  <img src="images/book-4.jpg" alt="" class="books-images">
+                </div>
+              </div>
+              <div class="col-md-12 pr-0 books__plash">
+                <div class="col-12 books__more">
+                  <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
+                  <a href="#" class="books__more-link">Смотреть все</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 pr-0 m-0-auto">
+              <div>
+                <img src="images/book-6.jpg" alt="" class="books-images">
+              </div>
+            </div>
+            <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
+              <div class="pl-2">
+                <img src="images/book-1.png" alt="" class="books-images">
+              </div>
+              <div class="pl-2">
+                <img src="images/book-2.jpg" alt="" class="books-images">
+              </div>
+            </div>
+          </div>
+          <!-- need add pan here -->
+
+        </div>
+      </div>
+    </section>
+    <section class="container-fluide recomendation pt-5">
+      <div class="container m-auto text-center mb-5">
+        <h1 class="mb-4 section__title">Рекомендуем лично Вам</h1>
+        <div class="container">
+          <div class="owl-carousel">
+            <a class="card" href="#">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
           </div>
         </div>
-      </div>      
-    </header>
+      </div>
 
-    <main class="main">
-      <section class="container">
-        <div class="icon-box row mb-5">
-          <a class="icon-box__link icon-box__link_catalog" href="#">
-            <div class="icon-box__icon" >
-              <span class="icon-box__line"></span>
+      <div class="container m-auto text-center mb-5">
+        <h1 class="mb-4 section__title">Бестселлеры</h1>
+        <div class="container">
+          <div class="owl-carousel">
+            <a class="card" href="#">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container m-auto text-center mb-5">
+        <h1 class="mb-4 section__title">Маленькие книги - большие идей</h1>
+        <div class="container">
+          <div class="owl-carousel">
+            <a class="card" href="#">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="images/book-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <img src="images/book-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Политическая энциклопеция современной японии</p>
+                <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluide text-light">
+        <div class="container-fluide bg-pink mt-5 ">
+          <div class="container p-4 container-position">
+            <div class="ml-2  pt-1 pb-1 pl-3 pr-3 book-of-day-label">
+              Книга недели
             </div>
-            <span class="icon-box__title">Каталог</span>            
+            <span class="ml-2">Это самая книга недели Это самая книга недели</span>
+          </div>
+          <div class="container-fluide bg-dark-pink">
+            <div class="container container-flex">
+              <div class="col-11 col-md-6 book-of-day-info  m-0-auto">
+                <span>Это самая крутая книга, которую вы можете себе представить
+                  Это самая крутая книга, которую вы можете себе представить
+                  Это самая крутая книга, которую вы можете себе представить
+                  Это самая крутая книга, которую вы можете себе представить
+                  <hr class='bg-light'>
+                </span>
+                <button type="button" class="btn btn-primary btn-view  m-0-auto">Описание, отзывы</>
+              </div>
+              <div class="col-8 col-md-6 book__up  m-0-auto">
+                <img src="images/book-6.jpg" alt="Книга недели" class="book-shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        </div>
+      </div>
+    </section>
+    <section class="container-fluide bg-light">
+      <div class="container m-auto text-center mb-5">
+        <h1 class="mb-4 section__title text-dark mt-5 font-weight-light">Подборки книг</h1>
+        <div class="container row mb-5">
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Для тех кто рисует</p>
+              <p class="card-text text-left">55 книг</p>
+            </div>
+            <img src="images/set-1.jpg" class="card-img-top" alt="...">
           </a>
-          <a class="icon-box__link icon-box__link_busket" href="#">
-            <div class="icon-box__icon bg-aqua" ></div>
-            <span class="icon-box__title">Корзина</span>            
-          </a>          
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Раскраски для взрослых</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-2.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Книги июня</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-3.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Книги, которые продают</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-4.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Для тех кто рисует</p>
+              <p class="card-text text-left">55 книг</p>
+            </div>
+            <img src="images/set-5.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Бестселлеры для родителей</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-6.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title text-left font-weight-bold m-0">Истории от первого лица</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-7.jpg" class="card-img-top" alt="...">
+          </a>
+          <a href="#" class="card col-6 col-md-3">
+            <div class="card-body bg-white p-3 pr-0">
+              <p class="card-title font-weight-bold text-left m-0">Развитие бизнеса в сети</p>
+              <p class="card-text  text-left">55 книг</p>
+            </div>
+            <img src="images/set-8.png" class="card-img-top" alt="...">
+          </a>
         </div>
-        <div class="col-12 row row-nowrap mb-5 pr-0">
-          <div class="col-12 col-md-2">
-            <ul class="nav nav__category">
-              <li>
-                  <a class="category__link" href="#new" aria-controls="new" data-toggle="tab">Новинки</a>
-              </li>
-              <li>
-                  <a class="category__link" href="#best" aria-controls="best" data-toggle="tab">Бестселлеры</a>
-              </li>
-              <li>
-                  <a class="category__link" href="#soon" aria-controls="soon" data-toggle="tab">Скоро в продаже</a>
-              </li>
-              <li>
-                  <a class="category__link" href="#for-kids" aria-controls="for-kids" data-toggle="tab">Для детей</a>
-              </li>
-              <li>
-                  <a class="category__link" href="#discount" aria-controls="discount" data-toggle="tab">Скидки дня</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content col-12 px-0">
-            <div class="tab-pane active" id="new">
-              <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
-                <div class="pl-2">
-                  <img src="images/book-1.png" alt="" class="books-images">
-                </div>
-                <div class="pl-2">
-                  <img src="images/book-2.jpg" alt="" class="books-images"> 
-                </div>                
-              </div>
-              <div class="col-6 col-md-4 pr-0 m-0-auto" >
-                <div>
-                  <img src="images/book-5.jpg" alt="" class="books-images">
-                </div>              
-              </div>
-              <div class="col-12 col-md-4 px-0">
-                <div class="col-md-12 pr-0 books-wrapper-row ">
-                  <div class='col-6 px-0 pr-2'>
-                    <img src="images/book-3.jpg" alt="" class="books-images">
-                  </div>
-                  <div class='col-6 px-0 pl-2'>
-                    <img src="images/book-4.jpg" alt="" class="books-images"> 
-                  </div>                      
-                </div>
-                <div class="col-md-12 pr-0 books__plash">
-                  <div class="col-12 books__more">
-                    <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
-                    <a href="#" class="books__more-link">Смотреть все</a>
-                  </div>                  
-                </div>                             
-              </div>   
-            </div>
-            <div class="tab-pane" id="best">
-              <div class="col-6 col-md-4 pr-0 m-0-auto" >
-                <div>
-                  <img src="images/book-5.jpg" alt="" class="books-images">
-                </div>              
-              </div>
-              <div class="col-12 col-md-4 px-0">
-                <div class="col-md-12 pr-0 books-wrapper-row ">
-                  <div class='col-6 px-0 pr-2'>
-                    <img src="images/book-3.jpg" alt="" class="books-images">
-                  </div>
-                  <div class='col-6 px-0 pl-2'>
-                    <img src="images/book-4.jpg" alt="" class="books-images"> 
-                  </div>                      
-                </div>
-                <div class="col-md-12 pr-0 books__plash">
-                  <div class="col-12 books__more">
-                    <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
-                    <a href="#" class="books__more-link">Смотреть все</a>
-                  </div>                  
-                </div>                             
-              </div>
-              <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
-                <div class="pl-2">
-                  <img src="images/book-1.png" alt="" class="books-images">
-                </div>
-                <div class="pl-2">
-                  <img src="images/book-2.jpg" alt="" class="books-images"> 
-                </div>                
-              </div>   
-            </div>
-            <div class="tab-pane" id="soon">
-              <div class="col-12 col-md-4 px-0">
-                  <div class="col-md-12 pr-0 books-wrapper-row ">
-                    <div class='col-6 px-0 pr-2'>
-                      <img src="images/book-3.jpg" alt="" class="books-images">
-                    </div>
-                    <div class='col-6 px-0 pl-2'>
-                      <img src="images/book-4.jpg" alt="" class="books-images"> 
-                    </div>                      
-                  </div>
-                  <div class="col-md-12 pr-0 books__plash">
-                    <div class="col-12 books__more">
-                      <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
-                      <a href="#" class="books__more-link">Смотреть все</a>
-                    </div>                  
-                  </div>                             
-                </div>
-              <div class="col-6 col-md-4 pr-0 m-0-auto" >
-                <div>
-                  <img src="images/book-5.jpg" alt="" class="books-images">
-                </div>              
-              </div>
-              <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
-                <div class="pl-2">
-                  <img src="images/book-1.png" alt="" class="books-images">
-                </div>
-                <div class="pl-2">
-                  <img src="images/book-2.jpg" alt="" class="books-images"> 
-                </div>                
-              </div>   
-            </div>
-            <div class="tab-pane" id="for-kids">
-              <div class="col-12 col-md-4 px-0">
-                  <div class="col-md-12 pr-0 books-wrapper-row ">
-                    <div class='col-6 px-0 pr-2'>
-                      <img src="images/book-3.jpg" alt="" class="books-images">
-                    </div>
-                    <div class='col-6 px-0 pl-2'>
-                      <img src="images/book-4.jpg" alt="" class="books-images"> 
-                    </div>                      
-                  </div>
-                  <div class="col-md-12 pr-0 books__plash">
-                    <div class="col-12 books__more">
-                      <span class="mb-2">Лучшие новинки изадтельства <br> Международное отношения</span>
-                      <a href="#" class="books__more-link">Смотреть все</a>
-                    </div>                  
-                  </div>                             
-                </div>
-              <div class="col-6 col-md-4 pr-0 m-0-auto" >
-                <div>
-                  <img src="images/book-6.jpg" alt="" class="books-images">
-                </div>              
-              </div>
-              <div class="col-12 col-md-2 px-0 books-wrapper-aliagn">
-                <div class="pl-2">
-                  <img src="images/book-1.png" alt="" class="books-images">
-                </div>
-                <div class="pl-2">
-                  <img src="images/book-2.jpg" alt="" class="books-images"> 
-                </div>                
-              </div>   
-            </div>
-<!-- need add pan here -->
+      </div>
 
-          </div>
-        </div>
-      </section>
-      <section class="container-fluide recomendation pt-5">
-        <div class="container m-auto text-center mb-5">
-          <h1 class="mb-4 section__title">Рекомендуем лично Вам</h1>
+      <div class="container m-auto text-center mb-5">
+          <h1 class="mb-4 text-dark section__title">Скидки дня</h1>
           <div class="container">
             <div class="owl-carousel">
               <a class="card" href="#">
                 <img src="images/book-1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">555 ₽</p>
                 </div>
               </a>
               <a class="card" href="#">
                 <img src="images/book-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">222  ₽</p>
                 </div>
               </a>
               <a class="card" href="#">
                 <img src="images/book-3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">888 ₽</p>
                 </div>
               </a>
               <a href="#" class="card">
                 <img src="images/book-1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">444 ₽</p>
                 </div>
               </a>
               <a href="#" class="card">
                 <img src="images/book-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">666 ₽</p>
                 </div>
               </a>
               <a class="card" href="#">
                 <img src="images/book-3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-title">Политическая энциклопеция современной японии</p>
-                  <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
+                  <p class="card-title text-left">Политическая энциклопеция современной японии</p>
+                  <p class="card-text text-left">111 ₽</p>
                 </div>
               </a>
             </div>
-          </div>        
+          </div>
         </div>
-
-        <div class="container m-auto text-center mb-5">
-            <h1 class="mb-4 section__title">Бестселлеры</h1>
-            <div class="container">
-              <div class="owl-carousel">
-                <a class="card" href="#">
-                  <img src="images/book-1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a href="#" class="card">
-                  <img src="images/book-1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a href="#" class="card">
-                  <img src="images/book-2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-              </div>
-            </div>         
-          </div>
-
-          <div class="container m-auto text-center mb-5">
-            <h1 class="mb-4 section__title">Маленькие книги - большие идей</h1>
-            <div class="container">
-              <div class="owl-carousel">
-                <a class="card" href="#">
-                  <img src="images/book-1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a href="#" class="card">
-                  <img src="images/book-1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a href="#" class="card">
-                  <img src="images/book-2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-                <a class="card" href="#">
-                  <img src="images/book-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-title">Политическая энциклопеция современной японии</p>
-                    <p class="card-text">Крупянко Н.И.<br>Аршиникидзе М.М.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="container-fluide text-light">            
-            <div class="container-fluide bg-pink mt-5 ">
-              
-              <div class="container p-4 container-position">
-                <div class="ml-2  pt-1 pb-1 pl-3 pr-3 book-of-day-label">
-                  Книга недели
-                </div>
-                <span class="ml-2">Это самая книга недели Это самая книга недели</span>
-              </div>
-            <div class="container-fluide bg-dark-pink">
-              <div class="container container-flex">
-                <div class="col-11 col-md-6 book-of-day-info  m-0-auto">
-                  <span>Это самая крутая книга, которую вы можете себе представить
-                      Это самая крутая книга, которую вы можете себе представить
-                      Это самая крутая книга, которую вы можете себе представить
-                      Это самая крутая книга, которую вы можете себе представить
-                      <hr class='bg-light'>
-                  </span>                  
-                  <button type="button" class="btn btn-primary btn-view  m-0-auto">Описание, отзывы</>
-                </div>
-                <div class="col-8 col-md-6 book__up  m-0-auto">
-                  <img src="images/book-6.jpg" alt="Книга недели" class="book-shadow">
-                </div>
-              </div>
-              
-              
-            </div>
-              
-            </div>
-            <div class="container">
-
-            </div>
-          </div>
-      </section>
-      
-    </main>
-
-    <footer class="footer container-fluide">
+    </section>
+    <section class="container-fluide bg-light">
       <div class="container">
-
+        <hr>
+        <div class="row justify-content-between">
+          <div class="col-10 col-sm-5 m-auto pt-4">
+            <h2 class="font-weight-bold text-primary">Книга в подарок</h2>
+            <p class="text-primary  text-subscription">Подпишись на рассылку и получи книгу в формате PDF бесплатно</p>
+          </div>
+          <div class="col-8 col-sm-5 col-lg-2 m-auto book-rotate">
+            <img src="images/book-3.jpg" alt="">
+          </div>
+          <div class="col-10  col-sm-7 col-lg-5 pt-4 m-auto">
+            <form class="form-subscription field-subscription mb-2" action="" method="post">
+              <input class="form-control input-subscription" name="txtemail" id="txtemail" placeholder="Ваш e-mail" type="email">
+              <button class="btn-subscription" type="submit" onclick="return subscribe();"></i></button>
+            </form>
+            <div class="text-primary text-subscription">
+              * подписываясь на рассылку, <span>вы соглашаетесь на обработку
+              персональных данных в соответствие с условиями</span> 
+            </div>
+          </div>
+        </div>
+        <hr>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    
-    
-                                    
+  <footer class="footer container-fluide">
+    <div class="container">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
