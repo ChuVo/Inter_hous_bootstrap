@@ -386,10 +386,12 @@ a:hover {
 
 .crazysouslik-link {
   font-family: FuturaLightC;
+  text-decoration: none !important;
   transition: .2s;
 }
 .crazysouslik-link:hover {
   color: yellow !important;
+  font-weight: 700;
 }
 
 .crazysouslik {
