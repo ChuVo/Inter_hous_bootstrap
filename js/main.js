@@ -1,6 +1,7 @@
 $(function() {
   // Owl Carousel
-  var owl = $(".owl-carousel");
+  const owl = $(".owl-carousel");
+
   owl.owlCarousel({
     items: 5,
     margin: 10,
@@ -10,7 +11,7 @@ $(function() {
     autoplayTimeout: 2000,
     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
       0:{
-          items:1
+          items:2
       },
       600:{
           items:4
@@ -20,6 +21,7 @@ $(function() {
       }
     }
   });
+
 });
 
 $(".next_button").click(function(){
@@ -30,3 +32,6 @@ $(".prev_button").click(function(){
   owl.trigger("prev.owl.carousel");
 });
 
+function subscribe() {
+  alert('Good! You do it!');
+}
